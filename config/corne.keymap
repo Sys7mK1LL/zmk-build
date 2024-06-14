@@ -46,7 +46,7 @@
   keymap {
     compatible = "zmk,keymap";
 
-    base {
+    base0 {
       bindings = <
         &lt 6 ESC        &kp Q         &kp W        &kp E         &kp R        &kp T          &kp Y            &kp U        &kp I         &kp O        &kp P            &lt 7 ENTER
         &mt LGUI BSLH    &hml LSHFT A  &hml LALT S  &hml LCTRL D  &hml LCMD F  &kp G          &kp H            &hmr RCMD J  &hmr RCTRL K  &hmr RALT L  &hmr RSHFT SEMI  &mt RGUI APOS
@@ -55,16 +55,26 @@
       >;
     };
 
-    raise {
+    left1 {
       bindings = <
-        &kp TAB          &kp N1  &kp N2    &kp N3    &kp N4    &kp N5       &kp N6     &kp N7  &kp N8  &kp N9  &kp N0      &kp TAB
-        &lt 5 BACKSLASH  &kp LT  &kp LBRC  &kp LBKT  &kp LPAR  &kp GRAVE    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp PERIOD  &kp RIGHT_GUI
-        &trans           &kp GT  &kp RBRC  &kp RBKT  &kp RPAR  &kp TILDE    &kp MINUS  &kp N1  &kp N2  &kp N3  &kp COMMA   &trans
-                                           &trans    &trans    &trans       &kp SPACE  &trans  &trans
+        &kp TAB          &kp GRAVE     &kp N7        &kp N8       &kp N9       &kp N0         &trans           &trans       &trans        &trans       &trans           &trans
+        &lt 2 BACKSLASH  &kp TILDE     &kp N4        &kp N5       &kp N6       &kp PLUS       &trans           &trans       &trans        &trans       &trans           &trans
+        &trans           &kp EQUAL     &kp N1        &kp N2       &kp N3       &kp MINUS      &trans           &trans       &trans        &trans       &trans           &trans       
+                                                     &trans       &trans       &trans         &trans           &trans       &trans
+      >;
+
+    };
+
+    left2 {
+      bindings = <
+        &trans           &trans        &kp LT        &kp LBRC     &kp LBKT     &kp LPAR       &trans          &trans       &trans       &trans        &trans           &trans
+        &trans           &trans        &kp GT        &kp RBRC     &kp RBKT     &kp RPAR       &trans          &trans       &trans       &trans        &trans           &trans
+        &trans           &trans        &kp BACKSLASH &kp PIPE     &TILDE       &kp GRAVE      &trans          &trans       &trans       &trans        &trans           &trans
+                                                     &trans       &trans       &trans         &trans          &trans       &trans
       >;
     };
 
-    lower {
+    right3 {
       bindings = <
         &trans  &trans  &trans  &trans  &trans  &trans    &kp RS(RC(C))  &kp PAGE_DOWN  &kp PAGE_UP  &kp RS(RC(X))  &kp RS(RC(V))  &kp TAB
         &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT      &kp RSHIFT     &kt RGUI
@@ -73,36 +83,36 @@
       >;
     };
 
+    right4 {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp F9  &kp F10 &kp F11 &kp F12 &trans   &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp F5  &kp F6  &kp F7  &kp F8  &trans   &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp F1  &kp F2  &kp F3  &kp F4  &trans   &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+      >;
+    };
+
     both {
       bindings = <
-        &ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+        &ext_power EP_TOG  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans  &trans  &trans                       &trans  &trans  &trans
       >;
     };
 
-    function {
+    num_left6 {
       bindings = <
-        &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-        &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &trans  &kp F4  &kp F5  &kp F6  &trans   &trans
-        &trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL    &trans  &kp F1  &kp F2  &kp F3  &trans   &trans
-                                            &trans        &trans        &trans            &trans  &trans  &trans
-      >;
-    };
-
-    num_left {
-      bindings = <
-        &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
 
-    num_right {
+    num_right7 {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
         &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans  &trans
