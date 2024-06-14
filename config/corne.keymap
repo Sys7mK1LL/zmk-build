@@ -69,7 +69,7 @@
       bindings = <
         &trans           &trans        &kp LT        &kp LBRC     &kp LBKT     &kp LPAR       &trans          &trans       &trans       &trans        &trans           &trans
         &trans           &trans        &kp GT        &kp RBRC     &kp RBKT     &kp RPAR       &trans          &trans       &trans       &trans        &trans           &trans
-        &trans           &trans        &kp BACKSLASH &kp PIPE     &TILDE       &kp GRAVE      &trans          &trans       &trans       &trans        &trans           &trans
+        &trans           &trans        &kp BACKSLASH &kp PIPE     &kp TILDE       &kp GRAVE      &trans          &trans       &trans       &trans        &trans           &trans
                                                      &trans       &trans       &trans         &trans          &trans       &trans
       >;
     };
