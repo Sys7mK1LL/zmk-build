@@ -96,7 +96,7 @@
 
     both5 {
       bindings = <
-        &trans  &kp EXCL &kp AT  &kp HASH  &kp DOLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+        &trans  &kp EXCL &kp AT  &kp POUND  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
         &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp PCSRN  &trans
         &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans  &trans
