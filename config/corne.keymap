@@ -62,7 +62,7 @@
         &kp TAB     &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                   &kp N6    &kp N7  &kp N8  &kp N9  &kp N0  &kp TAB
         &lt 2 PIPE  &kp LT  &kp LBRC  &kp LBKT  &kp LPAR  &kp GRAVE                &trans    &trans  &trans  &trans  &trans  &trans
         &mt LCTRL UNDERSCORE  &kp GT  &kp RBRC  &kp RBKT  &kp RPAR  &kp TILDE      &trans    &trans  &trans  &trans  &trans  &mt RCTRL PLUS
-                                                &trans    &trans    &trans         &kp SPACE &trans  &trans
+                                                &trans    &trans    &trans         &trans    &trans  &trans
       >;
 
     };
@@ -80,7 +80,7 @@
       bindings = <
         &kp LS(TAB)  &trans  &trans  &trans  &trans  &trans    &kp RS(RC(C))  &kp PAGE_DOWN  &kp PAGE_UP  &kp RS(RC(X))  &kp RS(RC(V))  &kp TAB
         &trans  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LGUI  &trans    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT      &kp RSHIFT     &lt 4 SQT
-        &trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE     &kp HOME       &kp END      &kp BACKSPACE  &kp RALT       &kp RCTRL
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE     &kp HOME       &kp END      &kp BACKSPACE  &kp RALT       &mt RCTRL PLUS
                                 &trans  &trans  &kp RET   &trans         &trans         &trans
 	>;
     };
