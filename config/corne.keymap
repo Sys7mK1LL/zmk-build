@@ -81,7 +81,7 @@
         &kp LS(TAB)  &trans  &trans  &trans  &trans  &trans    &kp RS(RC(C))  &kp PAGE_DOWN  &kp PAGE_UP  &kp RS(RC(X))  &kp RS(RC(V))  &kp TAB
         &trans  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LGUI  &trans    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT      &kp RSHIFT     &lt 4 SQT
         &trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE     &kp HOME       &kp END      &kp BACKSPACE  &kp RALT       &mt RCTRL PLUS
-                                &trans  &trans  &kp RET   &trans         &trans         &trans
+                                &trans  &trans  &trans    &trans         &trans         &trans
 	>;
     };
 
